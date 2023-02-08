@@ -18,7 +18,7 @@ class QuestionFactory: QuestionFactoryProtocol {
         self.delegate = delegate
     }
     
-    func loadData() {    // инициализирует загрузку данных
+    func loadData() {    // инициализирует загрузку
         moviesLoader.loadMovies { [weak self] result in
             DispatchQueue.main.async {
                 guard let self = self else { return }
@@ -27,7 +27,7 @@ class QuestionFactory: QuestionFactoryProtocol {
                     self.movies = mostPopularMovies.items// сохраняем фильм в нашу новую переменную
                     self.delegate?.didLoadDataFromServer() // сообщаем, что данные загрузились
                 case .failure(let error):
-                    self.delegate?.didFailToLoadData(with: error)            
+                    self.delegate?.didFailToLoadData(with: error)
                 }
             }
         }
@@ -63,5 +63,6 @@ class QuestionFactory: QuestionFactoryProtocol {
             }
         }
     }
-}
+    }
+
 

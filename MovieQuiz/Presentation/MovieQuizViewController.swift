@@ -22,7 +22,7 @@ final class MovieQuizViewController: UIViewController, MovieQuizViewControllerPr
         imageView.layer.cornerRadius = 20
         textLabel.textColor = .ypWhite
         textLabel.font = .boldSystemFont(ofSize: 23)
-    }
+        }
     
     // MARK: - Actions
     

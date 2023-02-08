@@ -33,4 +33,5 @@ struct MovieData: Codable, Hashable {
         case rating = "imDbRating"
         case imageURL = "image"
     }
+    
 }

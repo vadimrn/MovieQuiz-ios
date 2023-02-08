@@ -19,5 +19,5 @@ protocol MovieQuizViewControllerProtocol: AnyObject {
     func showNetworkError(message: String)
     func enableButtons()
     
-}
+    }
 

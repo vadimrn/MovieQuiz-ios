@@ -9,7 +9,7 @@ import Foundation
 
 protocol MoviesLoading {
     func loadMovies(handler: @escaping (Result<Movies, Error>) -> Void)
-}
+    }
 
 struct MoviesLoader: MoviesLoading {
     
