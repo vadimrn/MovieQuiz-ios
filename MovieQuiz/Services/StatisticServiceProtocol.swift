@@ -6,3 +6,4 @@ protocol StatisticService {
     var gameCount: Int { get }
     var bestGame: GameRecord { get }
 }
+

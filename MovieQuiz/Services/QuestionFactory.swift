@@ -60,3 +60,4 @@ class QuestionFactory: QuestionFactoryProtocol {
         delegate?.didReceiveNextQuestion(question: question)
     }
 }
+

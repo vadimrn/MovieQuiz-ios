@@ -8,3 +8,4 @@ extension UIColor {
     static var ypGray: UIColor { UIColor(named: "gray")! }
     static var ypBackground: UIColor { UIColor(named: "background")! }
 }
+
