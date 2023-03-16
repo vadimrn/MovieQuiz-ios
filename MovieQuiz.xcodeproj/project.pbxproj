@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272279B629C10BAB0086DB13 /* MoviesLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272FE96929BC671A0097DFAC /* MoviesLoaderTests.swift */; };
 		272FE96329BC592A0097DFAC /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272FE96229BC592A0097DFAC /* ArrayTests.swift */; };
-		272FE96A29BC671A0097DFAC /* MoviesLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272FE96929BC671A0097DFAC /* MoviesLoaderTests.swift */; };
 		272FE96C29BC68950097DFAC /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272FE96B29BC68950097DFAC /* NetworkClientProtocol.swift */; };
 		272FE96E29BC69390097DFAC /* MovieQuizViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272FE96D29BC69390097DFAC /* MovieQuizViewControllerProtocol.swift */; };
 		272FE97029BC6B090097DFAC /* MoviesLoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272FE96F29BC6B090097DFAC /* MoviesLoaderProtocol.swift */; };
@@ -488,7 +488,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				272FE96329BC592A0097DFAC /* ArrayTests.swift in Sources */,
-				272FE96A29BC671A0097DFAC /* MoviesLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27B8DEA929BFB7F50071C148 /* MovieQuizUITests.swift in Sources */,
+				272279B629C10BAB0086DB13 /* MoviesLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
