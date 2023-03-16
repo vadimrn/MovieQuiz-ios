@@ -22,6 +22,7 @@ final class MovieQuizViewController: UIViewController, MovieQuizViewControllerPr
         super.viewDidLoad()
         
         yesButton.accessibilityIdentifier = "Yes"
+        noButton.accessibilityIdentifier = "No"
         imageView.accessibilityIdentifier = "Poster"
         counterLabel.accessibilityIdentifier = "Index"
         
