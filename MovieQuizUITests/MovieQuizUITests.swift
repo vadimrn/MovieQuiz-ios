@@ -23,13 +23,14 @@ final class MovieQuizUITests: XCTestCase {
     }
 
     func testYesButton() throws {
+        sleep(5)
 
         let firstPoster = app.images["Poster"] // находим первоначальный постер
         let firstPosterData = firstPoster.screenshot().pngRepresentation
         let indexLabel = app.staticTexts["Index"]
         
         app.buttons["Yes"].tap() // находим кнопку `Да` и нажимаем её
-        sleep(3)
+        sleep(5)
         
         let secondPoster = app.images["Poster"] // находим второй постер
         let secondPosterData = secondPoster.screenshot().pngRepresentation
@@ -39,13 +40,14 @@ final class MovieQuizUITests: XCTestCase {
     }
     
     func testNoButton() throws {
+        sleep(5)
 
         let firstPoster = app.images["Poster"]
         let firstPosterData = firstPoster.screenshot().pngRepresentation
         let indexLabel = app.staticTexts["Index"]
         
         app.buttons["No"].tap()
-        sleep(3)
+        sleep(5)
         
         let secondPoster = app.images["Poster"]
         let secondPosterData = secondPoster.screenshot().pngRepresentation
@@ -55,8 +57,6 @@ final class MovieQuizUITests: XCTestCase {
     }
     
     func testGameFinish() throws {
-        sleep(2)
-        
         for _ in 0...9 {
             app.buttons["Yes"].tap()
             sleep(2)
@@ -70,11 +70,9 @@ final class MovieQuizUITests: XCTestCase {
     }
     
     func testAlertDismiss() throws {
-        sleep(2)
-        
         for _ in 0...9 {
             app.buttons["No"].tap()
-            sleep(2)
+            sleep(5)
         }
         
         let alert = app.alerts["QuizResults"]
